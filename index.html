@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamín Valenzuela · Portafolio</title>
+    <meta name="description" content="Estudiante de Ingeniería en Informática en Duoc UC. Desarrollo full stack, gestión de proyectos y certificaciones Scrum." />
+    <meta name="author" content="Benjamín Valenzuela" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://benvalenzuela.github.io/" />
+    <meta property="og:title" content="Benjamín Valenzuela · Portafolio" />
+    <meta property="og:description" content="Estudiante de Ingeniería en Informática — Desarrollo Full Stack · Gestión de Proyectos · Scrum" />
+    <meta property="og:image" content="https://benvalenzuela.github.io/img/perfil.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Benjamín Valenzuela · Portafolio" />
+    <meta name="twitter:description" content="Estudiante de Ingeniería en Informática — Desarrollo Full Stack · Gestión de Proyectos · Scrum" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- NAVEGACIÓN -->
+    <!-- ============================================================ -->
+    <nav class="gsap-init">
+        <a href="#inicio" class="nav-brand">
+            <div class="nav-mark">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 5L1 8L4 11M12 5L15 8L12 11M9 3L7 13" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            Benjamín Valenzuela
+        </a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Perfil</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#certificaciones">Certificaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-end">
+            <a href="https://github.com/BenValenzuela" target="_blank" class="nav-icon-link" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/benjam%C3%ADn-valenzuela-acevedo/" target="_blank" class="nav-icon-link" aria-label="LinkedIn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="CV_Benjamin_Valenzuela_actualizado.docx" download class="nav-icon-link" aria-label="Descargar CV en Word" title="Descargar CV en Word">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            </a>
+            <button id="theme-toggle" aria-label="Cambiar tema">
+                <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- HERO -->
+    <!-- ============================================================ -->
+    <div class="hero" id="inicio">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="status-pill gsap-init">
+                    <span class="status-dot"></span>
+                    Abierto a oportunidades en desarrollo
+                </div>
+                <h1 class="hero-name gsap-init">
+                    Benjamín<br />
+                    <span class="hero-name-accent">Valenzuela</span>
+                </h1>
+                <p class="hero-desc gsap-init">
+                    "De la idea al código — y del código al negocio."<br />
+                    <span style="font-size:15px;color:var(--muted);">Ingeniería en Informática · Duoc UC · Próximo a titularse</span>
+                </p>
+                <div class="hero-ctas gsap-init">
+                    <a href="#proyectos" class="btn btn-solid">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        Ver proyectos
+                    </a>
+                    <a href="#contacto" class="btn btn-ghost">
+                        Hablemos
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="hero-meta gsap-init">
+                    <span class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Santiago, Región Metropolitana, Chile
+                    </span>
+                    <span class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        Duoc UC
+                    </span>
+                    <span class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Full Stack
+                    </span>
+                </div>
+            </div>
+
+            <div class="hero-right gsap-init">
+                <div class="profile-card">
+                    <div class="profile-photo" style="position:relative;">
+                        <img src="img/benja-perfil.png" alt="Benjamín Valenzuela" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+                    </div>
+                    <div class="stack-panel">
+                        <div class="stack-panel-label">Front · Back · Gestión · Scrum</div>
+                        <div class="stack-pills">
+                            <div class="stack-pill"><span class="pill-dot" style="background:#61DAFB;"></span>React</div>
+                            <div class="stack-pill"><span class="pill-dot" style="background:#000000;"></span>Next.js</div>
+                            <div class="stack-pill"><span class="pill-dot" style="background:#47A248;"></span>MongoDB</div>
+                            <div class="stack-pill"><span class="pill-dot" style="background:#336791;"></span>PostgreSQL</div>
+                            <div class="stack-pill"><span class="pill-dot" style="background:#3776AB;"></span>Python</div>
+                            <div class="stack-pill"><span class="pill-dot" style="background:#F7DF1E;"></span>JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="card-socials">
+                        <a href="https://github.com/BenValenzuela" target="_blank" class="card-social">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/benjam%C3%ADn-valenzuela-acevedo/" target="_blank" class="card-social">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:bvalenzuelacevedo@gmail.com" class="card-social">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Email
+                        </a>
+                        <a href="CV_Benjamin_Valenzuela_actualizado.docx" download class="card-social" aria-label="Descargar CV en Word">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                            CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SOBRE MÍ -->
+    <!-- ============================================================ -->
+    <section class="section" id="sobre">
+        <div class="section-inner">
+            <div class="eyebrow"><span class="eyebrow-line"></span> Perfil</div>
+            <h2 class="section-title">Más allá del código.</h2>
+            <div class="about-layout">
+                <div class="about-prose">
+                    <p>Soy estudiante de octavo semestre de <strong>Ingeniería en Informática en Duoc UC</strong>, próximo a titularme. Me interesa crear soluciones que respondan a necesidades reales de personas y negocios.</p>
+                    <p>Durante mi práctica en <strong>Nestlé Chile</strong>, levanté requerimientos con usuarios y desarrollé soluciones internas con Power Apps, SharePoint y Power Automate, incluyendo una aplicación para planificar la recepción de camiones y otra para inspeccionar racks.</p>
+                    <p>También desarrollo <strong>Masaludable y PetGo</strong>, y he trabajado en proyectos académicos con APIs y medios de pago. Utilizo herramientas de inteligencia artificial como apoyo al desarrollo.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-row">
+                        <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                        <div class="feature-text"><h4>Desarrollo Full Stack</h4><p>React, Next.js, Node.js, MongoDB, PostgreSQL e integración de APIs.</p></div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <div class="feature-text"><h4>Gestión de Proyectos</h4><p>SCRUM, PMI/PMBOK, BPM, levantamiento de requerimientos y matrices de riesgo.</p></div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                        <div class="feature-text"><h4>Certificaciones Scrum</h4><p>Scrum Developer (SDPC™) y Scrum Foundation (SFPC™) por Certiprof.</p></div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+                        <div class="feature-text"><h4>Especialización</h4><p>Gestión de Proyectos TI por Duoc UC (2026).</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- STACK / TECNOLOGÍAS -->
+    <!-- ============================================================ -->
+    <section class="section" id="stack">
+        <div class="section-inner">
+            <div class="eyebrow"><span class="eyebrow-line"></span> Tecnologías</div>
+            <h2 class="section-title">Con qué trabajo.</h2>
+            <p class="section-sub">Herramientas con las que he construido proyectos reales, no solo tutoriales.</p>
+            <div class="stack-grid">
+                <!-- Frontend -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                        <span class="stack-block-label">Frontend</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag hi">React</span>
+                        <span class="tech-tag hi">Next.js</span>
+                        <span class="tech-tag hi">JavaScript</span>
+                        <span class="tech-tag">HTML5 &amp; CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Backend & APIs -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+                        <span class="stack-block-label">Backend &amp; APIs</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag hi">Node.js</span>
+                        <span class="tech-tag hi">Python · FastAPI · Flask</span>
+                        <span class="tech-tag hi">Integración de APIs</span>
+                        <span class="tech-tag hi">Webpay / Transbank</span>
+                        <span class="tech-tag">Google Maps API</span>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+                        <span class="stack-block-label">Bases de Datos</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag hi">MongoDB</span>
+                        <span class="tech-tag hi">PostgreSQL / Supabase</span>
+                        <span class="tech-tag hi">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Data & ML -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+                        <span class="stack-block-label">Data &amp; Machine Learning</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag mid">Python</span>
+                        <span class="tech-tag mid">Google Colab</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+                        <span class="stack-block-label">Cloud &amp; DevOps</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag low">Nociones de Google Cloud Platform</span>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="stack-block">
+                    <div class="stack-block-head">
+                        <div class="stack-block-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                        <span class="stack-block-label">Herramientas</span>
+                    </div>
+                    <div class="tech-list">
+                        <span class="tech-tag hi">Excel / Google Sheets</span>
+                        <span class="tech-tag mid">Git &amp; GitHub</span>
+                        <span class="tech-tag mid">Codex · IA</span>
+                        <span class="tech-tag mid">Power Apps · Power Automate</span>
+                        <span class="tech-tag mid">Power BI · SharePoint · Office Scripts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROYECTOS -->
+    <!-- ============================================================ -->
+    <section class="section" id="proyectos">
+        <div class="section-inner">
+            <div class="eyebrow"><span class="eyebrow-line"></span> Proyectos</div>
+            <h2 class="section-title">Lo que he construido.</h2>
+            <p class="section-sub">Ideas convertidas en experiencias digitales. Conoce los proyectos y explora sus demos cuando estén disponibles.</p>
+            <div class="projects-grid">
+
+                <!-- Proyecto 1: Pan Masa Madre -->
+                <div class="proj-card">
+                    <div class="proj-thumb" style="position:relative;overflow:hidden;background:linear-gradient(135deg,#1A2A4A,#2C4A7C);">
+                        <img src="img/Masaludable.png" alt="Vista previa de Masaludable" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+                        <span style="position:absolute;top:12px;right:12px;padding:4px 14px;border-radius:40px;font-size:11px;font-weight:700;background:#d4a853;color:#0a1628;letter-spacing:0.5px;text-transform:uppercase;">En desarrollo</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Supabase</span>
+                            <span class="proj-tag">WhatsApp</span>
+                        </div>
+                        <div class="proj-title">Masaludable</div>
+                        <p class="proj-desc">Aplicación para una panadería familiar con catálogo, carrito, pedidos por WhatsApp y panel de administración con autenticación y reglas de acceso.</p>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/BenValenzuela" target="_blank" class="proj-link">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                            Mi GitHub
+                        </a>
+                        <span class="proj-link project-pending">Demo en preparación</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: E-commerce con APIs -->
+                <div class="proj-card">
+                    <div class="proj-thumb" style="position:relative;overflow:hidden;background:linear-gradient(135deg,#1A2A4A,#2C4A7C);">
+                        <img src="img/petgo-hero.png" alt="Vista previa de PetGo, tienda de alimento para perros" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+                        <span style="position:absolute;top:12px;right:12px;padding:4px 14px;border-radius:40px;font-size:11px;font-weight:700;background:#2d4a6a;color:#fff;letter-spacing:0.5px;text-transform:uppercase;">Proyecto</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="proj-tag">Next.js</span>
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">TypeScript</span>
+                        </div>
+                        <div class="proj-title">PetGo — Tienda web para una pyme</div>
+                        <p class="proj-desc">Tienda web de alimento para perros con catálogo, carrito, pedidos por WhatsApp y un panel de seguimiento de clientes.</p>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/BenValenzuela" target="_blank" class="proj-link">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                            Mi GitHub
+                        </a>
+                        <span class="proj-link project-pending">Demo en preparación</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Gestión de Proyectos (próximamente) -->
+                <div class="proj-card proj-card--soon">
+                    <div class="proj-thumb" style="background:linear-gradient(135deg,#111113,#1c1c1e);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags"><span class="proj-tag proj-tag--soon">Próximamente</span></div>
+                        <div class="proj-title" style="color:var(--muted);">Más proyectos en camino</div>
+                        <p class="proj-desc">Trabajando en nuevos proyectos para agregar al portafolio. Visita mi GitHub para ver el trabajo en curso.</p>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/BenValenzuela" target="_blank" class="proj-link">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                            Ver GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================================ -->
+<!-- CERTIFICACIONES -->
+<!-- ============================================================ -->
+<section class="section" id="certificaciones" style="background:var(--bg-off);">
+    <div class="section-inner">
+        <div class="eyebrow"><span class="eyebrow-line"></span> Certificaciones</div>
+        <h2 class="section-title">Mis credenciales.</h2>
+        <p class="section-sub">Certificaciones que respaldan mi formación y experiencia.</p>
+        <div class="certs-grid">
+
+            <!-- Scrum Developer -->
+            <div class="cert-card">
+                <div class="cert-card__icon">📜</div>
+                <h4>Scrum Developer</h4>
+                <p>Certiprof · SDPC™</p>
+                <span class="cert-card__date">Jul 2026 — Jul 2029</span>
+                <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
+                    <span class="cert-card__badge">Vigente</span>
+                    <a href="certificados/Certificate-Benjamin-ValenzuelaAcevedo-SDPC.pdf" target="_blank" class="btn btn--small btn--outline" style="padding:4px 14px;font-size:11px;">Ver certificado</a>
+                </div>
+            </div>
+
+            <!-- Scrum Foundation -->
+            <div class="cert-card">
+                <div class="cert-card__icon">📜</div>
+                <h4>Scrum Foundation</h4>
+                <p>Certiprof · SFPC™</p>
+                <span class="cert-card__date">Jun 2026 — Jun 2027</span>
+                <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
+                    <span class="cert-card__badge">Vigente</span>
+                    <a href="certificados/Certificate-Benjamin-ValenzuelaAcevedo-SFPC.pdf" target="_blank" class="btn btn--small btn--outline" style="padding:4px 14px;font-size:11px;">Ver certificado</a>
+                </div>
+            </div>
+
+            <!-- Gestión de Proyectos TI -->
+            <div class="cert-card">
+                <div class="cert-card__icon">🏛️</div>
+                <h4>Gestión de Proyectos TI</h4>
+                <p>Duoc UC · Especialización</p>
+                <span class="cert-card__date">Ago 2026</span>
+                <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
+                    <span class="cert-card__badge">Aprobada</span>
+                    <a href="certificados/Especializacion_Gestion_Proyectos_TI.pdf" target="_blank" class="btn btn--small btn--outline" style="padding:4px 14px;font-size:11px;">Ver certificado</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================================ -->
+    <!-- CONTACTO -->
+    <!-- ============================================================ -->
+    <section class="section" id="contacto">
+        <div class="section-inner">
+            <div class="contact-header">
+                <div class="eyebrow"><span class="eyebrow-line"></span> Contacto</div>
+                <h2 class="section-title">¿Tienes un proyecto<br />o una oportunidad?</h2>
+                <p class="section-sub">Busco oportunidades para seguir creciendo como desarrollador. Si algo de lo que ves aquí encaja con lo que necesitas, escríbeme directamente.</p>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <div class="contact-actions">
+                        <a href="mailto:bvalenzuelacevedo@gmail.com" class="contact-link-row">
+                            <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                            <div class="contact-link-meta">
+                                <div class="contact-link-label">Correo</div>
+                                <div class="contact-link-value">bvalenzuelacevedo@gmail.com</div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/benjam%C3%ADn-valenzuela-acevedo/" target="_blank" class="contact-link-row">
+                            <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
+                            <div class="contact-link-meta">
+                                <div class="contact-link-label">LinkedIn</div>
+                                <div class="contact-link-value">Benjamín Valenzuela</div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="https://github.com/BenValenzuela" target="_blank" class="contact-link-row">
+                            <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.393.1 2.646.64.698 1.028 1.591 1.028 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></div>
+                            <div class="contact-link-meta">
+                                <div class="contact-link-label">GitHub</div>
+                                <div class="contact-link-value">BenValenzuela</div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="CV_Benjamin_Valenzuela_actualizado.docx" download class="contact-link-row">
+                            <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div>
+                            <div class="contact-link-meta">
+                                <div class="contact-link-label">Descargar CV</div>
+                                <div class="contact-link-value">Word · 2026</div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/myeglbql" method="POST" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="cf-name">Nombre</label>
+                            <input class="form-input" type="text" id="cf-name" name="name" placeholder="Tu nombre" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cf-email">Correo</label>
+                            <input class="form-input" type="email" id="cf-email" name="email" placeholder="tu@empresa.com" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="cf-subject">Asunto</label>
+                        <input class="form-input" type="text" id="cf-subject" name="subject" placeholder="Práctica profesional / Proyecto / Consulta" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="cf-msg">Mensaje</label>
+                        <textarea class="form-textarea" id="cf-msg" name="message" placeholder="Cuéntame de qué se trata..." required></textarea>
+                    </div>
+                    <div id="form-feedback" class="form-feedback"></div>
+                    <button type="submit" class="form-submit" id="form-btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="site-footer">
+        <span>Benjamín Valenzuela &mdash; <span id="footer-year"></span></span>
+        <span>Santiago, Región Metropolitana, Chile</span>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <!-- ============================================================ -->
+    <button id="up-btn" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
